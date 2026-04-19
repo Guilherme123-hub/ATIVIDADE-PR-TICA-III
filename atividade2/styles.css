@@ -1,0 +1,40 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+.hero {
+    display: flex;
+    height: 300px; /* Altura definida [cite: 25] */
+    background-color: purple;
+    color: white;
+    justify-content: center; /* Centralizado horizontalmente [cite: 25] */
+    align-items: center; /* Centralizado verticalmente [cite: 25] */
+}
+
+.container-blocos {
+    display: flex;
+    flex-wrap: wrap; /* Quebra de linha obrigatória [cite: 28] */
+    padding: 20px;
+    gap: 15px;
+}
+
+.bloco {
+    flex: 1; /* Tamanhos iguais [cite: 26] */
+    min-width: 250px;
+    height: 150px;
+    background-color: orange;
+}
+
+.cta {
+    display: flex;
+    justify-content: center; /* Conteúdo centralizado [cite: 27] */
+    background-color: red;
+    color: white;
+    padding: 30px;
+}
+
+.rodape {
+    width: 100%; /* Ocupar toda a largura [cite: 27] */
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}

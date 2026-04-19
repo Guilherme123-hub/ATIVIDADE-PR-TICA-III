@@ -1,0 +1,60 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+.dashboard-container {
+    display: flex;
+    height: 100vh; /* Toda a altura da tela [cite: 37] */
+}
+
+.menu-lateral {
+    width: 250px;
+    background-color: #121212;
+    color: white;
+    padding: 20px;
+}
+
+.area-principal {
+    display: flex;
+    flex-direction: column; /* Elementos em coluna [cite: 38] */
+    flex: 1;
+}
+
+.cabecalho {
+    background-color: #ff0055;
+    color: white;
+    padding: 15px;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 15px;
+    gap: 15px; /* Uso obrigatório de gap [cite: 39] */
+}
+
+.linha-superior {
+    display: flex;
+    gap: 15px;
+    height: 100px;
+}
+
+.bloco-azul {
+    flex: 1; /* Tamanhos iguais [cite: 38] */
+    background-color: #00ccff;
+}
+
+.linha-inferior {
+    display: flex;
+    gap: 15px;
+    flex: 1;
+}
+
+.bloco-grande {
+    flex: 2; /* Ocupa mais espaço [cite: 38] */
+    background-color: orange;
+}
+
+.bloco-pequeno {
+    flex: 1; /* Ocupa menos espaço [cite: 38] */
+    background-color: #00ffaa;
+}

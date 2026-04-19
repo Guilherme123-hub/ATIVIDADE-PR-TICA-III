@@ -1,0 +1,42 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+.layout-coluna {
+    display: flex;
+    flex-direction: column; /* Formato de coluna [cite: 46] */
+    height: 100vh;
+}
+
+.cabecalho {
+    background-color: #444;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.abas {
+    display: flex;
+}
+
+.aba {
+    flex: 1; /* Mesmo tamanho [cite: 48, 51] */
+    background-color: #888;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #777;
+}
+
+.area-conteudo {
+    display: flex;
+    flex-wrap: wrap; /* Múltiplas linhas [cite: 49] */
+    gap: 20px;
+    padding: 20px;
+    flex: 1;
+}
+
+.bloco-item {
+    /* Ajuste automático para ocupar 2 colunas [cite: 49] */
+    flex: 1 1 calc(50% - 20px); 
+    background-color: #4682b4;
+    min-height: 100px;
+}
